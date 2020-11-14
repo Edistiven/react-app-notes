@@ -52,7 +52,7 @@ export default class CreateNote extends Component {
         }else {
             await axios.post('https://boiling-savannah-96662.herokuapp.com/api/notes', newNote);
         }
-        window.location.href = '/';
+        window.location.href = '/react-app-notes/';
         
     }
 
