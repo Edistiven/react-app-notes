@@ -7,7 +7,7 @@ export default class Navigation extends Component {
     <nav className="navbar navbar-expand-lg navbar-dark  bg-primary">
        <div className="container">
 
-       <Link className="navbar-brand" to="/">
+       <Link className="navbar-brand" to="/react-app-notes/">
         Aplicación de Notas
         </Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,13 +16,13 @@ export default class Navigation extends Component {
         <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-                <Link className="nav-link" to="/">Notas</Link>
+                <Link className="nav-link" to="/react-app-notes/">Notas</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/create">Crear Nota</Link>
+                <Link className="nav-link" to="/react-app-notes/create">Crear Nota</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/user">Crear Usuario</Link>
+                <Link className="nav-link" to="/react-app-notes/user">Crear Usuario</Link>
             </li>
             
             </ul>

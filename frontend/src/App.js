@@ -15,10 +15,10 @@ function App() {
       <Navigation/>
 
       <div className="container p-4">
-      <Route path="/" component={NotesList} exact/>
-      <Route path="/edit/:id" component={CreateNote}/>
-      <Route path="/create" component={CreateNote}/>
-      <Route path="/user" component={CreateUser}/>
+      <Route path="/react-app-notes/" component={NotesList} exact/>
+      <Route path="/react-app-notes/edit/:id" component={CreateNote}/>
+      <Route path="/react-app-notes/create" component={CreateNote}/>
+      <Route path="/react-app-notes/user" component={CreateUser}/>
       </div>
 
     
