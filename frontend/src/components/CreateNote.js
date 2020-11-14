@@ -17,7 +17,7 @@ export default class CreateNote extends Component {
 
     async componentDidMount(){
 
-        const res =await axios.get('/api/users');
+        const res =await axios.get('https://boiling-savannah-96662.herokuapp.com/api/users');
         
         this.setState({
             users:res.data.map(user => user.username),
@@ -25,7 +25,7 @@ export default class CreateNote extends Component {
         })
         
         if(this.props.match.params.id){
-            const res = await axios.get('/api/notes/' + this.props.match.params.id);
+            const res = await axios.get('https://boiling-savannah-96662.herokuapp.com/notes/' + this.props.match.params.id);
                 this.setState({
                 title:res.data.title,
                 content:res.data.content,
@@ -48,9 +48,9 @@ export default class CreateNote extends Component {
         };
 
         if (this.state.editing){
-            await axios.put('/api/notes/'+ this.state._id, newNote);
+            await axios.put('https://boiling-savannah-96662.herokuapp.com/api/notes/'+ this.state._id, newNote);
         }else {
-            await axios.post('/api/notes', newNote);
+            await axios.post('https://boiling-savannah-96662.herokuapp.com/api/notes', newNote);
         }
         window.location.href = '/';
         

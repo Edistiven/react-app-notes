@@ -20,12 +20,12 @@ export default class CreateUser extends Component {
     }
 
     getUsers = async () =>{
-        const res = await axios.get('/api/users');
+        const res = await axios.get('https://boiling-savannah-96662.herokuapp.com/api/users');
         this.setState({users: res.data});
     }
     onSubmit = async e => {
         e.preventDefault();
-        await axios.post('/api/users', {
+        await axios.post('https://boiling-savannah-96662.herokuapp.com/api/users', {
             username:this.state.username
         })
         
@@ -34,7 +34,7 @@ export default class CreateUser extends Component {
     }
 
     deleteUser = async (id) =>{
-       await axios.delete('/api/users/' + id)
+       await axios.delete('https://boiling-savannah-96662.herokuapp.com/api/users/' + id)
        this.getUsers();
     }
 

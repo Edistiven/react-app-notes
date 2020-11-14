@@ -13,7 +13,7 @@ export default class NotesList extends Component {
     }
 
     async getNotes(){
-        const res =await axios.get('/api/notes')
+        const res =await axios.get('https://boiling-savannah-96662.herokuapp.com/api/notes')
         this.setState({
             notes:res.data
         })
@@ -21,7 +21,7 @@ export default class NotesList extends Component {
 
     deleteNote = async (id) =>{
 
-        await axios.delete('/api/notes/' + id );
+        await axios.delete('https://boiling-savannah-96662.herokuapp.com/api/notes/' + id );
         this.getNotes();
 
     }

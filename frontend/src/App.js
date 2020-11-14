@@ -7,7 +7,6 @@ import Navigation from './components/Navigation';
 import NotesList from './components/NotesList';
 import CreateNote from './components/CreateNote';
 import CreateUser from './components/CreateUser';
-import ParticleComponent from './ParticleComponent';
 
 function App() {
   return (
