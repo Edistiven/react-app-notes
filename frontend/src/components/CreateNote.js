@@ -25,7 +25,7 @@ export default class CreateNote extends Component {
         })
         
         if(this.props.match.params.id){
-            const res = await axios.get('https://boiling-savannah-96662.herokuapp.com/notes/' + this.props.match.params.id);
+            const res = await axios.get('https://boiling-savannah-96662.herokuapp.com/api/notes/' + this.props.match.params.id);
                 this.setState({
                 title:res.data.title,
                 content:res.data.content,
@@ -58,8 +58,7 @@ export default class CreateNote extends Component {
 
     onInputChange = e =>{
         
-        
-        this.setState({
+            this.setState({
             [e.target.name]:e.target.value
         })
     }
