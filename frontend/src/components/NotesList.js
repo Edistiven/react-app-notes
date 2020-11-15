@@ -36,7 +36,7 @@ export default class NotesList extends Component {
                             <div className="card">
                                 <div className="card-header d-flex justify-content-between">
                                     <h5>{note.title}</h5> 
-                                       <Link className="btn btn-primary" to={"/edit/" +note._id}>Editar</Link>
+                                       <Link className="btn btn-primary" to={"/react-app-notes/edit/" + note._id}>Editar</Link>
                                 </div>
                                 <div className="card-body">
                                     <p>{note.content}</p>
